@@ -1,21 +1,14 @@
 package com.joey.coach;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
-
 import android.content.Intent;
-import android.view.ContextMenu;
 import android.view.View;
-import android.widget.GridLayout.LayoutParams;
 import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-
 import com.google.android.material.button.MaterialButton;
-
 import java.util.ArrayList;
 import java.util.List;
 
