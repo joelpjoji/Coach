@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     if(onboardingViewPAger.getCurrentItem()+1 <onboardingAdapter.getItemCount()){
                         onboardingViewPAger.setCurrentItem(onboardingViewPAger.getCurrentItem()+1);
                     }else {
-                        startActivity(new Intent(getApplicationContext(), LoginActivity.class ));
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class ));
                         finish();
 
                     }
