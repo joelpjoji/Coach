@@ -13,7 +13,6 @@
             android:title="Your Certificates"
             android:icon="@drawable/certificate" />
     </group>
-
     <item android:title="Profile">
         <menu>
             <group android:checkableBehavior="single">

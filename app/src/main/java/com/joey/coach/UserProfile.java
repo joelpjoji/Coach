@@ -1,4 +1,4 @@
 package com.joey.coach;
 
-public class Userprof {
+public class UserProfile {
 }

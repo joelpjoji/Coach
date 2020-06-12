@@ -2,32 +2,54 @@ package com.joey.coach;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-
 import com.google.android.material.navigation.NavigationView;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener {
+    private CardView instrumentsmenu,gamesmenu,sportsmenu,origamimenu,paintingmenu,dancingmenu;
     static final float END_SCALE = 0.7f;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageView menuIcon;
     ConstraintLayout content;
+
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
+
         menuIcon = findViewById(R.id.menu_icon);
         content = findViewById(R.id.content);
         naviagtionDrawer();
+        instrumentsmenu = (CardView) findViewById(R.id.instrumentsmenu);
+        gamesmenu = (CardView) findViewById(R.id.gamesmenu);
+        sportsmenu = (CardView) findViewById(R.id.sportsmenu);
+        origamimenu = (CardView) findViewById(R.id.origamimenu);
+        paintingmenu = (CardView) findViewById(R.id.paintingmenu);
+        dancingmenu = (CardView) findViewById(R.id.dancingmenu);
+
+        instrumentsmenu.setOnClickListener(this);
+        gamesmenu.setOnClickListener(this);
+        sportsmenu.setOnClickListener(this);
+        origamimenu.setOnClickListener(this);
+        paintingmenu.setOnClickListener(this);
+        dancingmenu.setOnClickListener(this);
+
     }
     private void naviagtionDrawer(){
 
@@ -83,10 +105,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+    @Override
+    public void onClick(View v) {
+        Intent i ;
+        switch (v.getId()){
+            case R.id.instrumentsmenu : i = new Intent(this,InstrumentsActivity.class);startActivity(i); break;
+            case R.id.gamesmenu : i = new Intent(this,GamesActivity.class); startActivity(i);break;
+            case R.id.sportsmenu : i = new Intent(this,SportsActivity.class);startActivity(i); break;
+            case R.id.origamimenu : i = new Intent(this,OrigamiActivity.class);startActivity(i); break;
+            case R.id.paintingmenu : i = new Intent(this,PaintingActivity.class);startActivity(i); break;
+            case R.id.dancingmenu : i = new Intent(this,DancingActivity.class);startActivity(i); break;
+            default:break;
+        }
 
-
-
-
-
-
+    }
 }
