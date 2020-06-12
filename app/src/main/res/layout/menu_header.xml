@@ -27,7 +27,7 @@
         android:layout_marginStart="43dp"
         android:layout_marginLeft="49dp"
         android:layout_marginBottom="30dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="casual"
         android:text="oach"
         android:textColor="@color/colorTextPrimary"
         android:textSize="30sp" />
@@ -41,8 +41,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="22dp"
         android:src="@drawable/logo" />
+
     <ImageView
         android:layout_width="140dp"
         android:layout_height="155dp"

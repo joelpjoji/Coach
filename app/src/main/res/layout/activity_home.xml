@@ -39,13 +39,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <ImageView
                 android:id="@+id/menu_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="58dp"
+                android:layout_height="54dp"
                 android:src="@drawable/menubar"
                 tools:ignore="MissingConstraints" />
-
 
             <TextView
                 android:id="@+id/textView"
@@ -117,7 +117,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Instruments"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/bus"
@@ -149,7 +149,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Games"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/imageView3"
@@ -193,7 +193,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Sports"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/bus1"
@@ -225,7 +225,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Origami"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/train"
@@ -269,7 +269,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Painting"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/cycle"
@@ -301,7 +301,7 @@
                             android:layout_marginTop="10dp"
                             android:text="Dancing"
                             android:textSize="24sp"
-                            app:fontFamily="sans-serif" />
+                            app:fontFamily="casual" />
 
                         <ImageView
                             android:id="@+id/airplane"
