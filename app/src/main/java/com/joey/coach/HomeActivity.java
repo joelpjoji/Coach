@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
+import androidx.core.view.ViewConfigurationCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
@@ -17,7 +18,7 @@ import com.google.android.material.navigation.NavigationView;
 
 
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private CardView instrumentsmenu,gamesmenu,sportsmenu,origamimenu,paintingmenu,dancingmenu;
     static final float END_SCALE = 0.7f;
     DrawerLayout drawerLayout;
@@ -76,11 +77,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 break;
             case R.id.nav_profile:
-                intent = new Intent(this,UserProfile.class);
+                intent = new Intent(getApplicationContext(),UserProfile.class);
                 startActivity(intent);
                 break;
             case R.id.nav_certificate:
-                intent = new Intent(this,Certificates.class);
+                intent = new Intent(getApplicationContext(),Certificates.class);
                 startActivity(intent);
                 break;
         }
