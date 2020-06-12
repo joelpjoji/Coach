@@ -40,7 +40,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
             <ImageView
                 android:id="@+id/menu_icon"
                 android:layout_width="58dp"
@@ -50,11 +49,11 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="185dp"
+                android:layout_height="62dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="52dp"
                 android:text="What"
                 android:textColor="#595959"
                 android:textSize="50sp"
@@ -69,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="do you wanna Study."
+                android:text="Do you wanna Study."
                 android:textColor="#777676"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -78,8 +77,9 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="0dp"
-                android:layout_height="140dp"
+                android:layout_width="181dp"
+                android:layout_height="137dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +108,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView3"
@@ -141,7 +142,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView4"
@@ -186,7 +188,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView6"
@@ -219,7 +222,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView7"
@@ -264,7 +268,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView8"
@@ -297,7 +302,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true">
 
                         <TextView
                             android:id="@+id/textView9"
