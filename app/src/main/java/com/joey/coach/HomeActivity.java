@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 
 
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private CardView instrumentsmenu,gamesmenu,sportsmenu,origamimenu,paintingmenu,dancingmenu;
     static final float END_SCALE = 0.7f;
     DrawerLayout drawerLayout;
@@ -71,6 +71,20 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Intent intent;
+        switch(item.getItemId()){
+            case R.id.nav_home:
+                break;
+            case R.id.nav_profile:
+                intent = new Intent(this,UserProfile.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_certificate:
+                intent = new Intent(this,Certificates.class);
+                startActivity(intent);
+                break;
+        }
+
         return true;
     }
     public void onBackPressed() {
@@ -105,18 +119,37 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public void onClick(View v) {
-        Intent i ;
-        switch (v.getId()){
-            case R.id.instrumentsmenu : i = new Intent(this,InstrumentsActivity.class);startActivity(i); break;
-            case R.id.gamesmenu : i = new Intent(this,GamesActivity.class); startActivity(i);break;
-            case R.id.sportsmenu : i = new Intent(this,SportsActivity.class);startActivity(i); break;
-            case R.id.origamimenu : i = new Intent(this,OrigamiActivity.class);startActivity(i); break;
-            case R.id.paintingmenu : i = new Intent(this,PaintingActivity.class);startActivity(i); break;
-            case R.id.dancingmenu : i = new Intent(this,DancingActivity.class);startActivity(i); break;
-            default:break;
-        }
+     @Override
+     public void onClick(View v) {
+         Intent i;
+         switch (v.getId()) {
+             case R.id.instrumentsmenu:
+                 i = new Intent(this, InstrumentsActivity.class);
+                 startActivity(i);
+                 break;
+             case R.id.gamesmenu:
+                 i = new Intent(this, GamesActivity.class);
+                 startActivity(i);
+                 break;
+             case R.id.sportsmenu:
+                 i = new Intent(this, SportsActivity.class);
+                 startActivity(i);
+                 break;
+             case R.id.origamimenu:
+                 i = new Intent(this, OrigamiActivity.class);
+                 startActivity(i);
+                 break;
+             case R.id.paintingmenu:
+                 i = new Intent(this, PaintingActivity.class);
+                 startActivity(i);
+                 break;
+             case R.id.dancingmenu:
+                 i = new Intent(this, DancingActivity.class);
+                 startActivity(i);
+                 break;
+             default:
+                 break;
+         }
+     }
 
-    }
 }

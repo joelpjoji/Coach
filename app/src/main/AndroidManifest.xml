@@ -17,8 +17,9 @@
         <activity android:name=".SportsActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".InstrumentsActivity" />
+        <activity android:name=".Certificates" />
         <activity android:name=".HomeActivity" />
-
+        <activity android:name=".UserProfile" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_application_id" />
