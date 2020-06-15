@@ -13,4 +13,10 @@
     <color name="tlbar">#DDDADA</color>
     <color name="LightWhite">#EDEDED</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="sky_blue">#87CEBF</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="bold_white">#efefef</color>
+
+    <color name="red">#CE3730</color>
 </resources>

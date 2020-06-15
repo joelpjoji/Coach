@@ -4,4 +4,9 @@
     <string name="git">Guitar</string>
     <string name="vio">Violin</string>
     <string name="key">Keyboard</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_out">Sign out</string>
+    <string name="example">Example</string>
 </resources>
