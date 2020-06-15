@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Coach</string>
+    <string name="prof">My Profile</string>
+    <string name="git">Guitar</string>
+    <string name="vio">Violin</string>
+    <string name="key">Keyboard</string>
+</resources>
