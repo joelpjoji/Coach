@@ -2,12 +2,15 @@
 <resources>
     <color name="colorPrimary">#1DA1F2</color>
     <color name="colorPrimaryDark">#1DA1F2</color>
-    <color name="colorAccent">#14171A</color>
     <color name="darkGray">#657786</color>
     <color name="lightGray">#AAB8C2</color>
     <color name="extraLightGray">#E1E8ED</color>
     <color name="extraExtraLightGray">#F5F8FA</color>
     <color name="white">#FFFFFF</color>
     <color name="mainblue">#1ea1f2</color>
-
+    <color name="colorPrimaryBlue">#28AEC6</color>
+    <color name="colorAccent">#ACF1EA</color>
+    <color name="labeltxt">#000000</color>
+    <color name="tlbar">#DDDADA</color>
+    <color name="LightWhite">#EDEDED</color>
 </resources>
