@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.Coach.coach.LoginActivity.Companion.getLaunchIntent
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -42,6 +41,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         configureGoogleSignIn()
         setupUI()
+
         //FacebookSdk.sdkInitialize(getApplicationContext());
         //AppEventsLogger.activateApp(this);
 
@@ -72,12 +72,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 })
         })
-
-
-
     }
-
-
     companion object {
         fun getLaunchIntent(from: Context) = Intent(from, HomeActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
@@ -88,7 +83,7 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
         val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
-            startActivity(HomeActivity.getLaunchIntent(this))
+           startActivity(HomeActivity.getLaunchIntent(this))
             finish()
         }
     }
@@ -144,5 +139,3 @@ class LoginActivity : AppCompatActivity() {
     }
 
 }
-
-

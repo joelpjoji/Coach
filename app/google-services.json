@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "280717932055",
+    "firebase_url": "https://coach-3d236.firebaseio.com",
+    "project_id": "coach-3d236",
+    "storage_bucket": "coach-3d236.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280717932055:android:b2d98f1855dd1c21308e52",
+        "android_client_info": {
+          "package_name": "com.Coach.coach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280717932055-5m5p54d048m5krnttur4ngeqpknb9v3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbwOobStIEzft5oi-_nc5m4qm-jb9dK7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280717932055-5m5p54d048m5krnttur4ngeqpknb9v3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
