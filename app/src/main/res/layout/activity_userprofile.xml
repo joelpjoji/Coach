@@ -1,199 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".UserprofileActivity">
 
-    <RelativeLayout
-        android:id="@+id/rellay1"
-        android:layout_width="match_parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="17dp"
-        android:background="@color/LightWhite"
-        android:paddingBottom="20dp">
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="128dp"
-            android:layout_marginRight="128dp"
-            android:background="@color/LightWhite"
-            android:fontFamily="sans-serif-light"
-            android:text="Username"
-            android:textColor="@color/labeltxt"
-            android:textSize="32sp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="172dp"
-            android:layout_height="142dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="122dp"
-            android:layout_marginLeft="122dp"
-            android:layout_marginTop="62dp"
-            android:layout_marginEnd="116dp"
-            android:layout_marginRight="116dp"
-            android:background="@color/LightWhite"
-            tools:srcCompat="@tools:sample/avatars" />
-
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/linlay1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/id_txt"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rellay1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="359dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="4dp"
+        android:text="@string/example"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/id"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryBlue"
-            android:gravity="center"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@+id/id_txt"
+        app:layout_constraintTop_toBottomOf="@+id/id_txt" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryBlue"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/example"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryBlue"
-                    android:fontFamily="sans-serif-light"
-                    android:text="20"
-                    android:textColor="@color/LightWhite"
-                    android:textSize="25sp" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/email_address"
+        app:layout_constraintStart_toStartOf="@+id/name_txt"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryBlue"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Lessons Attended"
-                    android:textAllCaps="true"
-                    android:textColor="@color/LightWhite"
-                    android:textSize="13sp" />
+    <TextView
+        android:id="@+id/email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/example"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
-            </LinearLayout>
+    <Button
+        android:id="@+id/sign_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_txt" />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryBlue"
-            android:gravity="center"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryBlue"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryBlue"
-                    android:fontFamily="sans-serif-light"
-                    android:text="2"
-                    android:textColor="@color/LightWhite"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimaryBlue"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Certificates"
-                    android:textAllCaps="true"
-                    android:textColor="@color/LightWhite"
-                    android:textSize="13sp" />
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="332dp"
-        android:layout_below="@+id/rellay1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginBottom="-4dp"
-        android:background="#FFFFFF">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/sign_out_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign Out" />
-        </LinearLayout>
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/rellay1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginBottom="328dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/LightWhite"
-            android:text="Progress"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

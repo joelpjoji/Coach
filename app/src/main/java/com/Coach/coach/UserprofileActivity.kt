@@ -1,24 +1,36 @@
 package com.Coach.coach
 
 
-import kotlinx.android.synthetic.main.activity_home.*
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_home.*
-import com.facebook.AccessToken
-import com.facebook.GraphRequest
-import com.facebook.HttpMethod
-import com.facebook.login.LoginManager
 import kotlinx.android.synthetic.main.activity_userprofile.*
 
 class UserprofileActivity : AppCompatActivity() {
+
+    private lateinit var mAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_userprofile)
+
+        mAuth = FirebaseAuth.getInstance()
+        val currentUser = mAuth.currentUser
+
+        id_txt.text = currentUser?.uid
+        name_txt.text = currentUser?.displayName
+        email_txt.text = currentUser?.email
+
+        Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
+
+        sign_out_btn.setOnClickListener {
+            mAuth.signOut()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
