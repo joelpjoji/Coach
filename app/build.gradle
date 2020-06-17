@@ -71,23 +71,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
-
-    //Circular ImageView
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
-
-    //Firebase
-    implementation 'com.facebook.android:facebook-login:4.30.0'
-
     implementation 'com.google.firebase:firebase-auth:19.3.1'
     implementation 'com.google.android.gms:play-services-auth:18.0.0'
-
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-
-    implementation 'com.facebook.android:facebook-android-sdk:[4,5]'
-
-
-
 
 }
