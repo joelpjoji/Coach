@@ -6,6 +6,7 @@ package com.Coach.coach
     import android.widget.Toast
     import androidx.appcompat.app.ActionBarDrawerToggle
     import androidx.appcompat.app.AppCompatActivity
+    import androidx.cardview.widget.CardView
     import kotlinx.android.synthetic.main.activity_home.*
 
 
@@ -20,8 +21,7 @@ class HomeActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_home)
 
-                //val ImageView = menuicon
-            //menuicon.setOnClickListener()
+
 
             toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open , R.string.close)
             drawerLayout.addDrawerListener(toggle)
