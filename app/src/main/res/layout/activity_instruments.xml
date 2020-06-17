@@ -46,7 +46,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="18dp">
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
@@ -58,12 +58,13 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:layout_gravity="top"
                             android:src="@drawable/instruments" />
-
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="22dp"
+                            android:layout_width="294dp"
+                            android:layout_height="133dp"
+                            android:layout_row="0"
+                            android:layout_column="6"
                             android:text="Instruments"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
@@ -71,7 +72,7 @@
                             android:textStyle="bold" />
 
 
-                    </LinearLayout>
+                    </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -302,6 +303,8 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
+
 
 
             </GridLayout>
