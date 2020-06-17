@@ -18,6 +18,20 @@ allprojects {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Joey\\AndroidStudioProjects\\Coach\\key.jks')
+            storePassword 'Malayalam123@'
+            keyAlias 'key0'
+            keyPassword 'Malayalam123@'
+        }
+        debug {
+            storeFile file('C:\\Users\\Joey\\AndroidStudioProjects\\Coach\\key.jks')
+            storePassword 'Malayalam123@'
+            keyAlias 'key0'
+            keyPassword 'Malayalam123@'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
@@ -31,6 +45,7 @@ android {
         targetSdkVersion 29
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
@@ -76,5 +91,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.3.1'
     implementation 'com.google.android.gms:play-services-auth:18.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
+
 
 }

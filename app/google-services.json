@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "280717932055-svrqoov38r60cnk6miaf7nvevp43dnkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Coach.coach",
+            "certificate_hash": "41976c0463a70dce29603b6a189cebce338d39a8"
+          }
+        },
+        {
+          "client_id": "280717932055-ofuiqhdj8n8mt8vbra4n4u3b6q20rp5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Coach.coach",
+            "certificate_hash": "2f66a4442b3308b5933459a310fc5dec4eb89f48"
+          }
+        },
+        {
+          "client_id": "280717932055-h2ugbfb26c1tnog8n6ehejf5t0a4s5mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Coach.coach",
+            "certificate_hash": "70ea9e396bb01ef32f7b7ed32042fc43d6e1b689"
+          }
+        },
+        {
           "client_id": "280717932055-5m5p54d048m5krnttur4ngeqpknb9v3u.apps.googleusercontent.com",
           "client_type": 3
         }
