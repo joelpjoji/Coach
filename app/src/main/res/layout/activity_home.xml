@@ -25,6 +25,7 @@
             android:layout_height="210dp"
             >
             <ImageView
+                android:id="@+id/menuicon"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/menu"
