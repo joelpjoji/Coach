@@ -13,8 +13,7 @@
         <item
             android:id="@+id/certificates"
             android:icon="@drawable/certificate"
-            android:title="certificates"
-            />
+            android:title="Certificates" />
         <item
             android:id="@+id/nav_starred"
             android:icon="@drawable/recommended"

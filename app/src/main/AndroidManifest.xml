@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SportsActivity"></activity>
-        <activity android:name=".CalligraphyActivity" />
         <activity android:name=".SingingActivity" />
         <activity android:name=".DancingActivity" />
         <activity android:name=".CraftsActivity" />

@@ -1,16 +1,18 @@
 package com.Coach.coach
 
     import android.annotation.SuppressLint
+    import android.content.Intent
     import android.os.Bundle
     import android.view.MenuItem
     import android.widget.Toast
     import androidx.appcompat.app.ActionBarDrawerToggle
     import androidx.appcompat.app.AppCompatActivity
     import androidx.cardview.widget.CardView
+    import com.google.android.material.navigation.NavigationView
     import kotlinx.android.synthetic.main.activity_home.*
 
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
         lateinit var toggle: ActionBarDrawerToggle
 
@@ -22,6 +24,12 @@ class HomeActivity : AppCompatActivity() {
             setContentView(R.layout.activity_home)
 
 
+            val inst = findViewById<CardView>(R.id.instrumentstab)
+           inst.setOnClickListener{
+               val intnt = Intent(this, InstrumentsActivity::class.java)
+               startActivity(intnt)
+           }
+
 
             toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open , R.string.close)
             drawerLayout.addDrawerListener(toggle)
@@ -29,28 +37,29 @@ class HomeActivity : AppCompatActivity() {
 
 
             supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
-            navView.setNavigationItemSelectedListener {
-                when(it.itemId){
-                R.id.group_one -> Toast.makeText(applicationContext,
-                    "Clicked Item 1",Toast.LENGTH_SHORT).show()
-                    R.id.group_two -> Toast.makeText(applicationContext,
-                        "Clicked Item 2",Toast.LENGTH_SHORT).show()
-                    R.id.group_three -> Toast.makeText(applicationContext,
-                        "Clicked Item 3",Toast.LENGTH_SHORT).show()
-                    R.id.group_four -> Toast.makeText(applicationContext,
-                        "Clicked Item 4",Toast.LENGTH_SHORT).show()
+            navView.setNavigationItemSelectedListener(this)
+
+        }
+
+
+            override fun onNavigationItemSelected(item: MenuItem): Boolean {
+                when (item.itemId) {
+                    R.id.profile -> {
+                        val profile = Intent(this, UserprofileActivity::class.java)
+                        startActivity(profile)
+                    }
+
                 }
-                true
             }
 
-        }
+                override fun onOptionsItemSelected(item: MenuItem): Boolean {
+                    if (toggle.onOptionsItemSelected(item)) {
+                        return true
+                    }
+                    return super.onOptionsItemSelected(item)
+                }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (toggle.onOptionsItemSelected(item)){
-            return true
-        }
-        return super.onOptionsItemSelected(item)
-    }
-    }
+
+}
 
 
