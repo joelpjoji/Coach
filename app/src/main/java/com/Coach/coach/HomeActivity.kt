@@ -53,11 +53,7 @@ class HomeActivity : AppCompatActivity(){
                 val intnt = Intent(this, SportsActivity::class.java)
                 startActivity(intnt)
             }
-            val inst7 = findViewById<CardView>(R.id.calligraphytab)
-            inst7.setOnClickListener{
-                val intnt = Intent(this, CalligraphyActivity::class.java)
-                startActivity(intnt)
-            }
+
 
 
 

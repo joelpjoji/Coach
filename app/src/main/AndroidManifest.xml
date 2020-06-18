@@ -17,6 +17,8 @@
         <activity android:name=".SingingActivity" />
         <activity android:name=".DancingActivity" />
         <activity android:name=".CraftsActivity" />
+        <activity android:name=".OrigamiActivity" />
+        <activity android:name=".PaintingActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".HomeActivity"
             android:screenOrientation="portrait" />
