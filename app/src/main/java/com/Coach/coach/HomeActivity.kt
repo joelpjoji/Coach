@@ -61,21 +61,15 @@ class HomeActivity : AppCompatActivity(){
             toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open , R.string.close)
             drawerLayout.addDrawerListener(toggle)
             toggle.syncState()
-
-
             supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
 
         }
-
-
-
-
-                override fun onOptionsItemSelected(item: MenuItem): Boolean {
-                    if (toggle.onOptionsItemSelected(item)) {
-                        return true
-                    }
-                    return super.onOptionsItemSelected(item)
-                }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+             if (toggle.onOptionsItemSelected(item)) {
+                 return true
+             }
+                 return super.onOptionsItemSelected(item)
+    }
 
 
 }
