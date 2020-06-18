@@ -23,6 +23,7 @@
         <activity android:name=".UserprofileActivity" />
         <activity android:name=".InstrumentsActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".CalligraphyActivity" />
         <activity android:name=".SplashActivity"
             android:screenOrientation="portrait" >
             <intent-filter>

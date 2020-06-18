@@ -12,7 +12,7 @@ package com.Coach.coach
     import kotlinx.android.synthetic.main.activity_home.*
 
 
-class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class HomeActivity : AppCompatActivity(){
 
         lateinit var toggle: ActionBarDrawerToggle
 
@@ -23,12 +23,43 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_home)
 
-
-            val inst = findViewById<CardView>(R.id.instrumentstab)
+           val inst = findViewById<CardView>(R.id.instrumentstab)
            inst.setOnClickListener{
                val intnt = Intent(this, InstrumentsActivity::class.java)
                startActivity(intnt)
            }
+            val inst2 = findViewById<CardView>(R.id.crafttab)
+            inst2.setOnClickListener{
+                val intnt = Intent(this, CraftsActivity::class.java)
+                startActivity(intnt)
+            }
+            val inst3 = findViewById<CardView>(R.id.dancingtab)
+            inst3.setOnClickListener{
+                val intnt = Intent(this, DancingActivity::class.java)
+                startActivity(intnt)
+            }
+            val inst4 = findViewById<CardView>(R.id.gamestab)
+            inst4.setOnClickListener{
+                val intnt = Intent(this, GamesActivity::class.java)
+                startActivity(intnt)
+            }
+            val inst5 = findViewById<CardView>(R.id.singingtab)
+            inst5.setOnClickListener{
+                val intnt = Intent(this, SingingActivity::class.java)
+                startActivity(intnt)
+            }
+            val inst6 = findViewById<CardView>(R.id.sportstab)
+            inst6.setOnClickListener{
+                val intnt = Intent(this, SportsActivity::class.java)
+                startActivity(intnt)
+            }
+            val inst7 = findViewById<CardView>(R.id.calligraphytab)
+            inst7.setOnClickListener{
+                val intnt = Intent(this, CalligraphyActivity::class.java)
+                startActivity(intnt)
+            }
+
+
 
 
             toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open , R.string.close)
@@ -37,20 +68,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
             supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
-            navView.setNavigationItemSelectedListener(this)
 
         }
 
 
-            override fun onNavigationItemSelected(item: MenuItem): Boolean {
-                when (item.itemId) {
-                    R.id.profile -> {
-                        val profile = Intent(this, UserprofileActivity::class.java)
-                        startActivity(profile)
-                    }
 
-                }
-            }
 
                 override fun onOptionsItemSelected(item: MenuItem): Boolean {
                     if (toggle.onOptionsItemSelected(item)) {
