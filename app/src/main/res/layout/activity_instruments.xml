@@ -10,17 +10,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-
+            android:orientation="vertical">
             <GridLayout
                 android:id="@+id/mainGrid"
                 android:layout_width="match_parent"
@@ -46,7 +39,7 @@
                     app:cardCornerRadius="8dp"
                     app:cardElevation="18dp">
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
@@ -60,19 +53,22 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="top"
                             android:src="@drawable/instruments" />
-                        <TextView
-                            android:layout_width="294dp"
-                            android:layout_height="133dp"
-                            android:layout_row="0"
-                            android:layout_column="6"
-                            android:text="Instruments"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
 
 
-                    </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="294dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="0"
+                        android:layout_column="6"
+                        android:gravity="bottom"
+                        android:text="Guitar"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                         />
 
                 </androidx.cardview.widget.CardView>
 
@@ -101,16 +97,18 @@
                             android:layout_gravity="center_horizontal"
                             android:src="@drawable/violin" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Family"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Violin"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -139,16 +137,18 @@
                             android:layout_gravity="center_horizontal"
                             android:src="@drawable/drum" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Lovely"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="Drums"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -308,8 +308,6 @@
 
 
             </GridLayout>
-
         </LinearLayout>
-
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
