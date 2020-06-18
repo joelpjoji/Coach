@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE" />`
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -17,18 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SportsActivity"></activity>
-        <activity android:name=".SingingActivity" />
-        <activity android:name=".DancingActivity" />
         <activity android:name=".CraftsActivity" />
-        <activity android:name=".OrigamiActivity" />
-        <activity android:name=".PaintingActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".HomeActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".SchoolActivity" />
         <activity android:name=".UserprofileActivity" />
         <activity android:name=".InstrumentsActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".CalligraphyActivity" />
         <activity android:name=".SplashActivity"
             android:screenOrientation="portrait" >
             <intent-filter>

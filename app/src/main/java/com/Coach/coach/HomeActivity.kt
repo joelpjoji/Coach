@@ -39,9 +39,9 @@ class HomeActivity : AppCompatActivity(){
                 vibratorService.vibrate(35)
                 startActivity(intnt)
             }
-            val inst3 = findViewById<CardView>(R.id.dancingtab)
-            inst3.setOnClickListener{
-                val intnt = Intent(this, DancingActivity::class.java)
+            val inst3 = findViewById<CardView>(R.id.singingtab)
+            inst3.setOnClickListener {
+                val intnt = Intent(this, SchoolActivity::class.java)
                 val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                 vibratorService.vibrate(35)
                 startActivity(intnt)
@@ -53,9 +53,9 @@ class HomeActivity : AppCompatActivity(){
                 vibratorService.vibrate(35)
                 startActivity(intnt)
             }
-            val inst5 = findViewById<CardView>(R.id.singingtab)
-            inst5.setOnClickListener{
-                val intnt = Intent(this, SingingActivity::class.java)
+            val inst5 = findViewById<CardView>(R.id.dancingtab)
+            inst5.setOnClickListener {
+                val intnt = Intent(this, SchoolActivity::class.java)
                 val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                 vibratorService.vibrate(35)
                 startActivity(intnt)

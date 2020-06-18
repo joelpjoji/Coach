@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:background="@color/LightWhite"
@@ -24,8 +25,9 @@
         android:id="@+id/name_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"/>
+        android:textColor="@color/labeltxt"
+        android:textStyle="bold"
+        tools:text="Username" />
 
     <TextView
         android:id="@+id/email_txt"

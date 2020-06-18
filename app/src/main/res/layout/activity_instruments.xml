@@ -30,6 +30,7 @@
                 android:rowCount="3">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gtrbtn"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -56,7 +57,6 @@
                             android:src="@drawable/instruments" />
 
 
-
                     </LinearLayout>
 
                     <TextView
@@ -74,6 +74,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/viobtn"
                     android:layout_width="0dp"
                     android:layout_height="1dp"
                     android:layout_rowWeight="1"
@@ -99,7 +100,6 @@
                             android:src="@drawable/violin" />
 
 
-
                     </LinearLayout>
 
                     <TextView
@@ -115,6 +115,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/drumbtn"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -140,7 +141,6 @@
                             android:src="@drawable/drum" />
 
 
-
                     </LinearLayout>
 
                     <TextView
@@ -156,6 +156,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/keybtn"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
