@@ -63,6 +63,7 @@
                         android:layout_height="match_parent"
                         android:layout_row="0"
                         android:layout_column="6"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Guitar"
                         android:textAlignment="gravity"
@@ -103,6 +104,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Violin"
                         android:textAlignment="gravity"
@@ -143,6 +145,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Drums"
                         android:textAlignment="gravity"
@@ -165,6 +168,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Keyboard piano"
                         android:textAlignment="gravity"
@@ -204,6 +208,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Coming soon"
                         android:textAlignment="gravity"
@@ -243,6 +248,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:fontFamily="casual"
                         android:gravity="bottom|center"
                         android:text="Coming soon"
                         android:textAlignment="gravity"

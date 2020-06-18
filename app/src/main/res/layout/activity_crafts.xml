@@ -65,9 +65,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="bottom"
+                    android:fontFamily="casual"
+                    android:gravity="bottom|center"
                     android:text="Painting"
-                    android:textAlignment="center"
+                    android:textAlignment="gravity"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -107,9 +108,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="casual"
+                    android:gravity="bottom|center"
                     android:text="Origami"
-                    android:textAlignment="center"
-                    android:gravity="bottom"
+                    android:textAlignment="gravity"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -142,23 +144,15 @@
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/caligraphy" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Team"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="bottom"
+                    android:fontFamily="casual"
+                    android:gravity="bottom|center"
                     android:text="Calligraphy"
-                    android:textAlignment="center"
+                    android:textAlignment="gravity"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
