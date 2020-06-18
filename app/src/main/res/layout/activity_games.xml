@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="1500dp"
+    android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".GamesActivity">
 
@@ -12,7 +12,7 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1500dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         <GridLayout
             android:id="@+id/mainGrid"
             android:layout_width="match_parent"
-            android:layout_height="1500dp"
+            android:layout_height="1000dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="90dp"
             android:layout_marginRight="20dp"
@@ -37,7 +37,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/chesstab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -79,7 +79,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/carromstab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -121,7 +121,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/unotab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -162,7 +162,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/rubikstab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -203,7 +203,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/darttab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -245,7 +245,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/monopolytab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
@@ -287,7 +287,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardstab"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginLeft="16dp"
