@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_userprofile.*
 
 class UserprofileActivity : AppCompatActivity() {
 
@@ -19,7 +20,7 @@ class UserprofileActivity : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
-        id_txt.text = currentUser?.uid
+       
         name_txt.text = currentUser?.displayName
         email_txt.text = currentUser?.email
 

@@ -6,6 +6,7 @@ package com.Coach.coach
     import android.os.Bundle
     import android.os.Vibrator
     import android.view.MenuItem
+    import android.widget.ImageView
     import android.widget.Toast
     import androidx.appcompat.app.ActionBarDrawerToggle
     import androidx.appcompat.app.AppCompatActivity
@@ -20,14 +21,16 @@ class HomeActivity : AppCompatActivity(){
 
 
 
+
         @SuppressLint("RestrictedApi")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_home)
 
+
            val inst = findViewById<CardView>(R.id.instrumentstab)
            inst.setOnClickListener{
-               val intnt = Intent(this, InstrumentsActivity::class.java)
+               val intnt = Intent(this, UserprofileActivity::class.java)
                val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                vibratorService.vibrate(35)
                startActivity(intnt)
@@ -84,6 +87,8 @@ class HomeActivity : AppCompatActivity(){
              }
                  return super.onOptionsItemSelected(item)
     }
+
+
 
 
 }
