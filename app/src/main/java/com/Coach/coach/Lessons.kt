@@ -1,7 +1,7 @@
 package com.Coach.coach
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class Lessons : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

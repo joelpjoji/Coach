@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
 
-public class SplashActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
 

@@ -2,9 +2,9 @@ package com.Coach.coach
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Vibrator
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
 class CraftsActivity : AppCompatActivity() {
