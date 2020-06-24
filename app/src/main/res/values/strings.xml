@@ -1,11 +1,5 @@
 <resources>
     <string name="app_name">Coach</string>
-    <string name="git">Guitar</string>
-    <string name="vio">Violin</string>
-    <string name="key">Keyboard</string>
-    <string name="request_client_id">280717932055-5m5p54d048m5krnttur4ngeqpknb9v3u.apps.googleusercontent.com</string>
-    <string name="facebook_app_id">189175492410131</string>
-    <string name="fb_login_protocol_scheme">fb189175492410131</string>
     <string name="example">Example</string>
     <string name="id">ID</string>
     <string name="name">Name</string>

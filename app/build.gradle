@@ -20,13 +20,13 @@ allprojects {
 android {
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\User\\AndroidStudioProjects\\CoachAndroid\\key.jks')
+            storeFile file('C:\\Users\\Joey\\AndroidStudioProjects\\Coach\\key.jks')
             storePassword 'Malayalam123@'
             keyAlias 'key0'
             keyPassword 'Malayalam123@'
         }
         debug {
-            storeFile file('C:\\Users\\User\\AndroidStudioProjects\\CoachAndroid\\key.jks')
+            storeFile file('C:\\Users\\Joey\\AndroidStudioProjects\\Coach\\key.jks')
             storePassword 'Malayalam123@'
             keyAlias 'key0'
             keyPassword 'Malayalam123@'
@@ -37,12 +37,10 @@ android {
 
     defaultConfig {
         applicationId "com.Coach.coach"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        minSdkVersion 21
-        targetSdkVersion 29
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
@@ -66,6 +64,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:18.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
