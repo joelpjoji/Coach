@@ -7,44 +7,44 @@ import android.os.Vibrator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
-class GamesActivity : AppCompatActivity() {
+class LessonList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_games)
-        val inst = findViewById<CardView>(R.id.chesstab)
-        inst.setOnClickListener {
-            val intnt = Intent(this, LessonList::class.java)
+        setContentView(R.layout.activity_lessonlist)
+        val inst1 = findViewById<CardView>(R.id.lesson1)
+        inst1.setOnClickListener {
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
-        val inst2 = findViewById<CardView>(R.id.carromstab)
+        val inst2 = findViewById<CardView>(R.id.lesson2)
         inst2.setOnClickListener {
-            val intnt = Intent(this, LessonList::class.java)
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
-        val inst3 = findViewById<CardView>(R.id.rubikstab)
+        val inst3 = findViewById<CardView>(R.id.lesson3)
         inst3.setOnClickListener {
-            val intnt = Intent(this, LessonList::class.java)
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
-        val inst4 = findViewById<CardView>(R.id.darttab)
+        val inst4 = findViewById<CardView>(R.id.lesson4)
         inst4.setOnClickListener {
-            val intnt = Intent(this, LessonList::class.java)
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
-        val inst5 = findViewById<CardView>(R.id.cardstab)
+        val inst5 = findViewById<CardView>(R.id.lesson5)
         inst5.setOnClickListener {
-            val intnt = Intent(this, LessonList::class.java)
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
-        }
         }
     }
+}

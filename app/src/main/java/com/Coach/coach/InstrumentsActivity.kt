@@ -13,28 +13,28 @@ class InstrumentsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_instruments)
         val inst = findViewById<CardView>(R.id.gtrbtn)
         inst.setOnClickListener {
-            val intnt = Intent(this, SchoolActivity::class.java)
+            val intnt = Intent(this, LessonList::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
             val inst2 = findViewById<CardView>(R.id.viobtn)
             inst2.setOnClickListener {
-                val intnt = Intent(this, SchoolActivity::class.java)
+                val intnt = Intent(this, LessonList::class.java)
                 val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                 vibratorService.vibrate(35)
                 startActivity(intnt)
             }
                 val inst3 = findViewById<CardView>(R.id.keybtn)
                 inst3.setOnClickListener {
-                    val intnt = Intent(this, SchoolActivity::class.java)
+                    val intnt = Intent(this, LessonList::class.java)
                     val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                     vibratorService.vibrate(35)
                     startActivity(intnt)
                 }
                     val inst4 = findViewById<CardView>(R.id.drumbtn)
                     inst4.setOnClickListener {
-                        val intnt = Intent(this, SchoolActivity::class.java)
+                        val intnt = Intent(this, LessonList::class.java)
                         val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                         vibratorService.vibrate(35)
                         startActivity(intnt)

@@ -13,21 +13,21 @@ class CraftsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_crafts)
         val inst = findViewById<CardView>(R.id.paintingtab)
         inst.setOnClickListener {
-            val intnt = Intent(this, SchoolActivity::class.java)
+            val intnt = Intent(this, LessonList::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
         val inst2 = findViewById<CardView>(R.id.origamitab)
         inst2.setOnClickListener {
-            val intnt = Intent(this, Lessons::class.java)
+            val intnt = Intent(this, LessonList::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
         val inst3 = findViewById<CardView>(R.id.calligraphytab)
         inst3.setOnClickListener {
-            val intnt = Intent(this, SchoolActivity::class.java)
+            val intnt = Intent(this, LessonList::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)

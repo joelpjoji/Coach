@@ -4,9 +4,7 @@
     package="com.Coach.coach">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -16,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SportsActivity"></activity>
+        <activity android:name=".SportsActivity"/>
+        <activity android:name=".LessonList"/>
         <activity android:name=".CraftsActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".HomeActivity"
