@@ -1,8 +1,10 @@
 package com.Coach.coach
 
+import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import android.widget.MediaController
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
@@ -16,9 +18,9 @@ class Lessons : AppCompatActivity() {
         progress_circular.apply{
             progressMax = 100f
             setProgressWithAnimation(70f,1000)
-            progressBarWidth = 5f
+            progressBarWidth = 9f
             progressBarColor = Color.CYAN
-            backgroundProgressBarWidth= 7f
+            backgroundProgressBarWidth= 5f
 
 
             val uri =
@@ -26,6 +28,13 @@ class Lessons : AppCompatActivity() {
             vid.setVideoURI(uri)
             vid.start()
 
+
+
+            }
+        val btn = findViewById<Button>(R.id.finishlesson)
+        btn.setOnClickListener{
+            val intnt = Intent(this,LessonReview::class.java)
+            startActivity(intnt)
 
         }
     }

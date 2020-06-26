@@ -16,6 +16,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SportsActivity"/>
         <activity android:name=".LessonList"/>
+        <activity android:name=".LessonReview"/>
         <activity android:name=".CraftsActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".HomeActivity"

@@ -7,4 +7,6 @@
     <string name="sign_out">Sign out</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="rate">How would you rate your lesson</string>
+    <string name="feed">Give feedback to your tutors</string>
 </resources>
