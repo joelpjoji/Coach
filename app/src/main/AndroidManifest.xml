@@ -22,6 +22,7 @@
         <activity android:name=".HomeActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".SchoolActivity" />
+        <activity android:name=".Lessons" />
         <activity android:name=".UserprofileActivity" />
         <activity android:name=".InstrumentsActivity" />
         <activity android:name=".LoginActivity" />

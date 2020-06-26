@@ -20,7 +20,7 @@ class CraftsActivity : AppCompatActivity() {
         }
         val inst2 = findViewById<CardView>(R.id.origamitab)
         inst2.setOnClickListener {
-            val intnt = Intent(this, SchoolActivity::class.java)
+            val intnt = Intent(this, Lessons::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
