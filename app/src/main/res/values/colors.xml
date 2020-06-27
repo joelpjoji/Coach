@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorPrimaryDark">#1DA1F2</color>
+    <color name="darkGray">#657786</color>
+    <color name="colorAccent">#ACF1EA</color>
+    <color name="labeltxt">#000000</color>
+    <color name="LightWhite">#EDEDED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hamburgerTrans">#00000000</color>
+</resources>

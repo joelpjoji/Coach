@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group
+        android:id="@+id/group_one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/dashboard"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/certificates"
+            android:icon="@drawable/certificate"
+            android:title="Certificates" />
+        <item
+            android:id="@+id/recommended"
+            android:icon="@drawable/recommended"
+            android:title="Recommend Courses"
+            android:checked="true"/>
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group_two">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/connect"
+            android:icon="@drawable/login"
+            android:title="Connect"
+            />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group_three">
+
+        <item
+            android:id="@+id/allcategory"
+            android:icon="@drawable/allcategory"
+            android:title="All Category" />
+        <item
+            android:id="@+id/schools"
+            android:icon="@drawable/school"
+            android:title="Schools" />
+
+    </group>
+
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group_four">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/support"
+            android:title="Send feedback" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/bug"
+            android:title="Help" />
+    </group>
+</menu>
