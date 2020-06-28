@@ -15,18 +15,9 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class LessonListActivity : AppCompatActivity() {
-    private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lessonlist)
-        mAuth = FirebaseAuth.getInstance()
-        val currentUser = mAuth.currentUser
-
-
-        name_txt.text = currentUser?.displayName
-        email_txt.text = currentUser?.email
-
-        Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
         val inst1 = findViewById<CardView>(R.id.lesson1)
         inst1.setOnClickListener {
             val intnt = Intent(this, LessonActivity::class.java)
