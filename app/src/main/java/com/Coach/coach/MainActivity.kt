@@ -14,16 +14,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
     var drawerLayout: DrawerLayout? = null
     var navigationView: NavigationView? = null
+    private lateinit var mAuth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.navigation_drawer)
         var toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        mAuth = FirebaseAuth.getInstance()
+        val currentUser = mAuth.currentUser
 
         //added toolbar
         toolbar = findViewById<View>(R.id.toolbar) as Toolbar

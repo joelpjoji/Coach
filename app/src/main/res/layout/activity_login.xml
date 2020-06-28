@@ -13,55 +13,47 @@
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:layout_marginTop="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="375dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:fontFamily="sans-serif"
-        android:includeFontPadding="false"
-        android:paddingTop="20sp"
-        android:shadowColor="#0E0E0E"
-        android:text="Sign in"
-        android:textAlignment="center"
-        android:textColor="@color/darkGray"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toTopOf="@+id/google_signIn"
+    <ImageView
+        android:id="@+id/welcome_imageView"
+        android:layout_width="224dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="332dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.636"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_welcome"
+        tools:ignore="VectorDrawableCompat" />
 
     <Button
-        android:id="@+id/google_signIn"
+        android:id="@+id/sign_in_btn"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/ripple"
         android:drawableLeft="@drawable/google"
         android:elevation="8dp"
         android:text="Sign In with Google"
         android:textColor="@color/darkGray"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_imageView"
+        app:layout_constraintVertical_bias="0.922" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,68 +74,7 @@
         app:layout_constraintVertical_bias="0.96"
         android:gravity="center_horizontal" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="183dp"
-        android:layout_marginLeft="183dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:text="or with "
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/google_signIn"
-        app:layout_constraintVertical_bias="0.182" />
 
-    <Button
-        android:id="@+id/facebook_signIn"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/facebook"
-        android:elevation="50dp"
-        app:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:background="@drawable/microsoft"
-        app:elevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/phone"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="15dp"
-
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/phone"
-        app:elevation="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.169" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

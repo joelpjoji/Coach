@@ -14,16 +14,21 @@ import androidx.appcompat.app.AppCompatActivity
 import com.Coach.coach.CreateAnim.createAnimation
 import com.Coach.coach.OnAnimationListener
 import com.Coach.coach.StarterAnimation
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_starter.*
 
 
 class StarterActivity : AppCompatActivity() {
+    private lateinit var mAuth: FirebaseAuth
+
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupStatusStyle()
         setContentView(R.layout.activity_starter)
+        mAuth = FirebaseAuth.getInstance()
+        val user = mAuth.currentUser
         usingSplashClass()
     }
 
@@ -67,7 +72,7 @@ class StarterActivity : AppCompatActivity() {
 
     private fun whatToDoNext() {
         imageView.visibility = View.GONE
-        val intent = Intent(this@StarterActivity, MainActivity::class.java)
+        val intent = Intent(this@StarterActivity, LoginActivity::class.java)
         startActivity(intent)
         overridePendingTransition(R.anim.whole_animation, R.anim.no_animaiton)
         finish()
