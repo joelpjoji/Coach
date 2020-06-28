@@ -8,18 +8,23 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.navigation.NavigationView
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.bumptech.glide.Glide
+import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_profile.*
 
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
     var drawerLayout: DrawerLayout? = null
     var navigationView: NavigationView? = null
     private lateinit var mAuth: FirebaseAuth
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +43,17 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
         drawerLayout = findViewById<View>(R.id.drawer_layout) as DrawerLayout
         navigationView = findViewById<View>(R.id.navigation_view) as NavigationView
         navigationView!!.setNavigationItemSelectedListener(this)
+
+
+        val fullname = currentUser?.displayName
+        val parts = fullname?.split("\\s+".toRegex())?.toTypedArray()
+        val firstname = parts?.get(0)
+
+        name_txt.text = currentUser?.displayName
+        email_txt.text = currentUser?.email
+        name_txt1.text = firstname
+        Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
+
         val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer)
         drawerLayout!!.setDrawerListener(toggle)
         toggle.syncState()
@@ -87,6 +103,7 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
         }
 
 
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -109,6 +126,10 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
             R.id.home -> {
                 i.setClass(this, MainActivity::class.java)
                 startActivity(i)
+            }
+            R.id.signout -> {
+                startActivity(LoginActivity.getLaunchIntent(this))
+                FirebaseAuth.getInstance().signOut();
             }
             R.id.certificates -> {
                 i.setClass(this, CertificatesActivity::class.java)
@@ -147,3 +168,5 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
 
 
 }
+
+

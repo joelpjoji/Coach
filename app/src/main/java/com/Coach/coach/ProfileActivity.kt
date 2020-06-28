@@ -15,7 +15,7 @@ class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-        setupUI()
+
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
@@ -27,13 +27,5 @@ class ProfileActivity : AppCompatActivity() {
 
 
     }
-    private fun setupUI() {
-        sign_out_button.setOnClickListener {
-            signOut()
-        }
-    }
-    private fun signOut() {
-        startActivity(LoginActivity.getLaunchIntent(this))
-        FirebaseAuth.getInstance().signOut();
-    }
+
 }
