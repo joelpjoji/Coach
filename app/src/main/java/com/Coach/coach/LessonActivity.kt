@@ -13,7 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
-class LessonActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class LessonActivity : AppCompatActivity(){
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,50 +34,5 @@ class LessonActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
         }
     }
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
-        val i = Intent()
-        when (item.itemId) {
-            R.id.home -> {
-                i.setClass(this, MainActivity::class.java)
-                startActivity(i)
-            }
-            R.id.signout -> {
-                startActivity(LoginActivity.getLaunchIntent(this))
-                FirebaseAuth.getInstance().signOut();
-            }
-            R.id.certificates -> {
-                i.setClass(this, CertificatesActivity::class.java)
-                startActivity(i)
-            }
-            R.id.recommended -> {
-                i.setClass(this, RecommendedActivity::class.java)
-                startActivity(i)
-            }
-            R.id.profile -> {
-                i.setClass(this, ProfileActivity::class.java)
-                startActivity(i)
-            }
 
-            R.id.schools -> {
-                i.setClass(this, SchoolActivity::class.java)
-                startActivity(i)
-            }
-            R.id.nav_settings -> {
-                i.setClass(this, SettingsActivity::class.java)
-                startActivity(i)
-            }
-            R.id.nav_feedback -> {
-                i.setClass(this, FeedbackActivity::class.java)
-                startActivity(i)
-            }
-            R.id.nav_help -> {
-                i.setClass(this, HelpActivity::class.java)
-                startActivity(i)
-            }
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
 }
