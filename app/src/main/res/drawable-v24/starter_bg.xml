@@ -5,7 +5,8 @@
     <item>
         <bitmap
             android:src="@drawable/logowhite"
-            android:gravity="center">
+            android:gravity="center"
+            >
 
         </bitmap>
 

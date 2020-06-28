@@ -3,6 +3,7 @@
     package="com.Coach.coach">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".SchoolDetailsActivity" />
         <activity android:name=".LessonActivity" />
         <activity android:name=".LessonListActivity" />
@@ -23,7 +24,6 @@
         <activity android:name=".AllcategoryActivity" />
         <activity android:name=".RecommendedActivity" />
         <activity android:name=".CertificatesActivity" />
-        <activity android:name=".SportsActivity" />
         <activity android:name=".GamesActivity" />
         <activity android:name=".SchoolActivity" />
         <activity android:name=".CraftsActivity" />
