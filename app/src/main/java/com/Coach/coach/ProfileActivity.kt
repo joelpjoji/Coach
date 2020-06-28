@@ -9,12 +9,13 @@ import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : AppCompatActivity() {
 
+
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-
+        setupUI()
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
@@ -24,11 +25,15 @@ class ProfileActivity : AppCompatActivity() {
 
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
 
-        sign_out_btn.setOnClickListener {
-            mAuth.signOut()
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+
+    }
+    private fun setupUI() {
+        sign_out_button.setOnClickListener {
+            signOut()
         }
+    }
+    private fun signOut() {
+        startActivity(LoginActivity.getLaunchIntent(this))
+        FirebaseAuth.getInstance().signOut();
     }
 }
