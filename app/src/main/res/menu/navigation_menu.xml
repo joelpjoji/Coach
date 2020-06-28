@@ -9,17 +9,29 @@
             android:id="@+id/home"
             android:icon="@drawable/dashboard"
             android:title="Home"
+            android:checked="true"
             />
+        <item
+            android:id="@+id/courses"
+            android:icon="@drawable/mycourses"
+            android:title="My Courses" />
         <item
             android:id="@+id/certificates"
             android:icon="@drawable/certificate"
-            android:title="Certificates" />
+            android:title="My Certificates" />
         <item
             android:id="@+id/recommended"
             android:icon="@drawable/recommended"
             android:title="Recommend Courses"
-            android:checked="true"/>
+            />
+
+        <item
+            android:id="@+id/schools"
+            android:icon="@drawable/school"
+            android:title="Schools" />
+
     </group>
+
 
     <group
         android:checkableBehavior="single"
@@ -30,26 +42,17 @@
             android:title="Profile"
             />
         <item
-            android:id="@+id/connect"
+            android:id="@+id/subscription"
+            android:icon="@drawable/subscription"
+            android:title="Subscriptions"
+            />
+        <item
+            android:id="@+id/signout"
             android:icon="@drawable/login"
-            android:title="Connect"
+            android:title="Sign Out"
             />
     </group>
 
-    <group
-        android:checkableBehavior="single"
-        android:id="@+id/group_three">
-
-        <item
-            android:id="@+id/allcategory"
-            android:icon="@drawable/allcategory"
-            android:title="All Category" />
-        <item
-            android:id="@+id/schools"
-            android:icon="@drawable/school"
-            android:title="Schools" />
-
-    </group>
 
 
     <group

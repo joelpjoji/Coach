@@ -117,14 +117,7 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
                 i.setClass(this, ProfileActivity::class.java)
                 startActivity(i)
             }
-            R.id.connect -> {
-                i.setClass(this, ProfileActivity::class.java)
-                startActivity(i)
-            }
-            R.id.allcategory -> {
-                i.setClass(this, AllcategoryActivity::class.java)
-                startActivity(i)
-            }
+
             R.id.schools -> {
                 i.setClass(this, SchoolActivity::class.java)
                 startActivity(i)

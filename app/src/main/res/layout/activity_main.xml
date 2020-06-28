@@ -23,8 +23,8 @@
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_margin="10dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@drawable/menu"
                 app:theme ="@style/ThemeOverlay.AppCompat.Light">
             </com.google.android.material.appbar.MaterialToolbar>
@@ -50,9 +50,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="69dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="83dp"
                 android:text="What"
                 android:textSize="45sp" />
 
@@ -63,11 +63,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginBottom="16dp"
                 android:layout_toStartOf="@+id/imageView2"
                 android:layout_toLeftOf="@+id/imageView2"
                 android:text="do you wanna Learn today"
