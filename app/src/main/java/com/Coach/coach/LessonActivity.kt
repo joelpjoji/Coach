@@ -20,7 +20,7 @@ class LessonActivity : AppCompatActivity(){
         setContentView(R.layout.activity_lesson)
 
         video_player.setUp("https://firebasestorage.googleapis.com/v0/b/coach-3d236.appspot.com/o/adultgyan_-20170810-0001.mp4?alt=media&token=1b91c256-b0b4-41f1-976c-75ce4f16cc1a"
-                ,"Dance",JzvdStd.SCREEN_STATE_OFF)
+                ,"Lesson 1",JzvdStd.SCREEN_STATE_OFF)
 
 
         val btn = findViewById<Button>(R.id.finishlesson)
