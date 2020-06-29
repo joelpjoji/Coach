@@ -56,11 +56,11 @@
 
 
 
-        <VideoView
-            android:id="@+id/vid"
+        <cn.jzvd.JzvdStd
+            android:id="@+id/video_player"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="15dp" />
+            android:layout_height="250dp"
+            android:layout_margin="10dp"/>
 
         <Button
             android:id="@+id/finishlesson"

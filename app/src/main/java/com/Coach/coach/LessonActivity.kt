@@ -1,22 +1,27 @@
 package com.Coach.coach
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
+import androidx.appcompat.app.AppCompatActivity
+import cn.jzvd.Jzvd
+import cn.jzvd.JzvdStd
 import com.bumptech.glide.Glide
-import com.google.android.material.navigation.NavigationView
-import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_profile.*
+import com.bumptech.glide.request.target.Target
+import kotlinx.android.synthetic.main.activity_lesson.*
 
 class LessonActivity : AppCompatActivity(){
+
+    private lateinit var videoView: JzvdStd
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson)
+
+        video_player.setUp("https://firebasestorage.googleapis.com/v0/b/coach-3d236.appspot.com/o/adultgyan_-20170810-0001.mp4?alt=media&token=1b91c256-b0b4-41f1-976c-75ce4f16cc1a"
+                ,"Dance",JzvdStd.SCREEN_STATE_OFF)
+
 
         val btn = findViewById<Button>(R.id.finishlesson)
         btn.setOnClickListener{
@@ -26,5 +31,16 @@ class LessonActivity : AppCompatActivity(){
 
         }
     }
+    override fun onPause() {
+        super.onPause()
+        JzvdStd.releaseAllVideos()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        JzvdStd.backPress()
+    }
 
 }
+
+
