@@ -42,6 +42,11 @@
             android:title="Profile"
             />
         <item
+            android:id="@+id/payment"
+            android:icon="@drawable/payment"
+            android:title="Payment"
+            />
+        <item
             android:id="@+id/subscription"
             android:icon="@drawable/subscription"
             android:title="Subscriptions"
