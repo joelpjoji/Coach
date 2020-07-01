@@ -4,8 +4,6 @@
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
     android:layout_height="190dp"
-    android:padding="16dp"
-    android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:background="@drawable/header">

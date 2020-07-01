@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
                     firebaseAuthWithGoogle(account)
                 }
             } catch (e: ApiException) {
-                Toast.makeText(this, "Google sign in failed:(", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Google Signin Failed", Toast.LENGTH_LONG).show()
             }
         }
     }
@@ -94,7 +94,7 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(intnt)
                 finish()
             } else {
-                Toast.makeText(this, "Google sign in failed:(", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Google Signin Failed", Toast.LENGTH_LONG).show()
             }
         }
     }
