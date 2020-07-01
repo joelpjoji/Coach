@@ -68,7 +68,7 @@
         android:gravity="center|bottom"
         android:lines="2"
         android:maxLines="2"
-        android:text="By clicking to Sign in, you're agreeing to our "
+        android:text="By clicking to sign in, you're agreeing to our "
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
