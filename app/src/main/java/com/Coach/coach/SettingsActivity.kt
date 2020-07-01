@@ -1,24 +1,28 @@
 package com.Coach.coach
 
+import android.content.Context
 import android.os.Bundle
+import android.telephony.TelephonyManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.preference.PreferenceFragmentCompat
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_profile.*
+
 
 class SettingsActivity : AppCompatActivity() {
+    private lateinit var mAuth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_activity)
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.settings, SettingsFragment())
-            .commit()
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        mAuth = FirebaseAuth.getInstance()
+        val currentUser = mAuth.currentUser
+
+
+
+        email_txt.text = currentUser?.email
+
     }
 
-    class SettingsFragment : PreferenceFragmentCompat() {
-        override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-            setPreferencesFromResource(R.xml.root_preferences, rootKey)
-        }
-    }
+
 }
