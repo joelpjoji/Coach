@@ -12,26 +12,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".SchoolDetailsActivity" />
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".SchoolDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity android:name=".LessonActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" >
         </activity>
-        <activity android:name=".LessonListActivity" />
+        <activity android:name=".LessonListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity android:name=".HelpActivity" />
-        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".AllcategoryActivity" />
-        <activity android:name=".RecommendedActivity" />
-        <activity android:name=".CertificatesActivity" />
-        <activity android:name=".GamesActivity" />
-        <activity android:name=".SchoolActivity" />
-        <activity android:name=".CraftsActivity" />
-        <activity android:name=".InstrumentsActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AllcategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".RecommendedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".CertificatesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".GamesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".SchoolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".CraftsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".InstrumentsActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -44,7 +67,8 @@
         </activity>
         <activity
             android:name=".StarterActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

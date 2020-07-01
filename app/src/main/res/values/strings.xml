@@ -14,6 +14,8 @@
     <string name="name">Name</string>
     <string name="email_address">Email address</string>
     <string name="sign_out">Sign out</string>
+    <string name="termsandconditions">Terms and Conditions<a href="https://hastebin.com/utixekogaj.sql"></a></string>
+
 
 
     <string name="inbox">Inbox</string>
