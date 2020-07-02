@@ -10,4 +10,9 @@
     <color name="hamburgerTrans">#00000000</color>
     <color name="Black">#000000</color>
     <color name="touchBlack">#212121</color>
+    <color name="grey">#E9EAEE</color>
+    <color name="yellow">#F8BA0F</color>
+    <color name="goodgrey">#535353</color>
+    <color name="blue">#293859</color>
+    <color name="lightgrey">#EEEEEE</color>
 </resources>
