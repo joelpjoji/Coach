@@ -7,7 +7,8 @@
     tools:context=".LessonActivity">
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="40dp"
@@ -79,22 +80,22 @@
             app:layout_constraintVertical_bias="0.154" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/chatbutton"
+            android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/finishlesson"
-            app:layout_constraintVertical_bias="0.968"
-            android:backgroundTint="#1DA1F2"
-
-
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/chat" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
