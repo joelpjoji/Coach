@@ -79,23 +79,22 @@
             app:layout_constraintTop_toBottomOf="@+id/video_player"
             app:layout_constraintVertical_bias="0.154" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+        <com.skydoves.transformationlayout.TransformationLayout
+            android:id="@+id/transformationLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
-            app:backgroundTint="@color/colorAccent"
-            app:fabSize="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/finishlesson"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/chat" />
+            app:transformation_duration="550">
+
+        </com.skydoves.transformationlayout.TransformationLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/chatbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chat"
+            android:backgroundTint="@color/colorPrimary"
+            tools:layout_editor_absoluteX="345dp"
+            tools:layout_editor_absoluteY="563dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

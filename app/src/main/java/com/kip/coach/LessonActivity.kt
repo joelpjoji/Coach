@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import cn.jzvd.JzvdStd
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
+import com.skydoves.transformationlayout.onTransformationStartContainer
 import kotlinx.android.synthetic.main.activity_lesson.*
 
 class LessonActivity : AppCompatActivity(){
@@ -15,10 +16,13 @@ class LessonActivity : AppCompatActivity(){
     private lateinit var videoView: JzvdStd
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        onTransformationStartContainer()
         setContentView(R.layout.activity_lesson)
-        findViewById<FloatingActionButton>(R.id.chatbutton).setOnClickListener { view ->
-            Snackbar.make(view, "Chat with your tutors If you have doubts", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        findViewById<FloatingActionButton>(R.id.chatbutton).setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
+            val intent = Intent(this, ChatActivity::class.java)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intent, bundle)
         }
 
         video_player.setUp("https://firebasestorage.googleapis.com/v0/b/coach-3d236.appspot.com/o/adultgyan_-20170810-0001.mp4?alt=media&token=1b91c256-b0b4-41f1-976c-75ce4f16cc1a"
@@ -37,6 +41,7 @@ class LessonActivity : AppCompatActivity(){
         super.onPause()
         JzvdStd.releaseAllVideos()
     }
+
 
     override fun onBackPressed() {
         super.onBackPressed()

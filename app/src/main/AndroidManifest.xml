@@ -3,9 +3,8 @@
     package="com.kip.coach">
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,51 +13,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.kip.coach.LoginActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.SchoolDetailsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.LessonActivity"
+        <activity android:name=".ChatActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SchoolDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LessonActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.LessonListActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.HelpActivity" />
-        <activity android:name="com.kip.coach.FeedbackActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.kip.coach.SettingsActivity"
+            android:name=".LessonListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".HelpActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name="com.kip.coach.AllcategoryActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.RecommendedActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.CertificatesActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.GamesActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.SchoolActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.CraftsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.InstrumentsActivity" android:screenOrientation="portrait" >
-        </activity>
-        <activity android:name="com.kip.coach.ProfileActivity"
-            android:screenOrientation="portrait" >
-        </activity>
         <activity
-            android:name="com.kip.coach.MainActivity"
+            android:name=".AllcategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecommendedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CertificatesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SchoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CraftsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InstrumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -68,16 +69,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kip.coach.StarterActivity"
-            android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait" >
+            android:name=".StarterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

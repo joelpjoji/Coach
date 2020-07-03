@@ -8,33 +8,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:280717932055:android:b2d98f1855dd1c21308e52",
+        "mobilesdk_app_id": "1:280717932055:android:7c45a5716d463ab7308e52",
         "android_client_info": {
-          "package_name": "com.Coach.coach"
+          "package_name": "com.kip.coach"
         }
       },
       "oauth_client": [
         {
-          "client_id": "280717932055-svrqoov38r60cnk6miaf7nvevp43dnkb.apps.googleusercontent.com",
+          "client_id": "280717932055-vka3g43iqbft66btkp6mmltfbtmtmi8q.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.Coach.coach",
+            "package_name": "com.kip.coach",
             "certificate_hash": "41976c0463a70dce29603b6a189cebce338d39a8"
           }
         },
         {
-          "client_id": "280717932055-ofuiqhdj8n8mt8vbra4n4u3b6q20rp5j.apps.googleusercontent.com",
+          "client_id": "280717932055-fq9vvnviaavp96dape5oc93iso41t06m.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.Coach.coach",
-            "certificate_hash": "2f66a4442b3308b5933459a310fc5dec4eb89f48"
-          }
-        },
-        {
-          "client_id": "280717932055-h2ugbfb26c1tnog8n6ehejf5t0a4s5mt.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.Coach.coach",
+            "package_name": "com.kip.coach",
             "certificate_hash": "70ea9e396bb01ef32f7b7ed32042fc43d6e1b689"
           }
         },
