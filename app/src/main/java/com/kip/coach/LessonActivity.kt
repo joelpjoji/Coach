@@ -1,7 +1,9 @@
 package com.kip.coach
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Vibrator
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -10,13 +12,16 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.skydoves.transformationlayout.onTransformationStartContainer
 import kotlinx.android.synthetic.main.activity_lesson.*
+import kotlinx.android.synthetic.main.activity_lesson.transformationLayout
+import kotlinx.android.synthetic.main.activity_main.*
 
 class LessonActivity : AppCompatActivity(){
 
     private lateinit var videoView: JzvdStd
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         onTransformationStartContainer()
+
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson)
         findViewById<FloatingActionButton>(R.id.chatbutton).setOnClickListener {
             val bundle = transformationLayout.withActivity(this, "myTransitionName")
@@ -31,9 +36,12 @@ class LessonActivity : AppCompatActivity(){
 
         val btn = findViewById<Button>(R.id.finishlesson)
         btn.setOnClickListener{
-            val intnt = Intent(this,LessonListActivity::class.java)
-            Toast.makeText(getApplicationContext(),"Go To Next Lesson", Toast.LENGTH_LONG).show();
-            startActivity(intnt)
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
+            val intnt = Intent(this, LessonListActivity::class.java)
+            val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibratorService.vibrate(35)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
 
         }
     }

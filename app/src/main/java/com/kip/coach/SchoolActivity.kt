@@ -12,11 +12,15 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.skydoves.transformationlayout.onTransformationStartContainer
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class SchoolActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
+        onTransformationStartContainer()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_school)
         mAuth = FirebaseAuth.getInstance()
@@ -29,17 +33,21 @@ class SchoolActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
         val inst1 = findViewById<CardView>(R.id.school1)
         inst1.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolDetailsActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
         val inst2 = findViewById<CardView>(R.id.school2)
         inst2.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolDetailsActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

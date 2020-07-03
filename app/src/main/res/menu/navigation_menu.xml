@@ -2,9 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <group
-        android:id="@+id/group_one"
-        android:checkableBehavior="single">
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
             android:icon="@drawable/dashboard"
@@ -12,7 +10,6 @@
             android:checked="true"
             />
         <item
-            android:id="@+id/courses"
             android:icon="@drawable/mycourses"
             android:title="My Courses" />
         <item
@@ -34,20 +31,17 @@
 
 
     <group
-        android:checkableBehavior="single"
-        android:id="@+id/group_two">
+        android:checkableBehavior="single">
         <item
             android:id="@+id/profile"
             android:icon="@drawable/profile"
             android:title="Profile"
             />
         <item
-            android:id="@+id/payment"
             android:icon="@drawable/payment"
             android:title="Payment"
             />
         <item
-            android:id="@+id/subscription"
             android:icon="@drawable/subscription"
             android:title="Subscriptions"
             />
@@ -61,8 +55,7 @@
 
 
     <group
-        android:checkableBehavior="single"
-        android:id="@+id/group_four">
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/settings"
