@@ -12,11 +12,15 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.skydoves.transformationlayout.onTransformationStartContainer
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class GamesActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
+        onTransformationStartContainer()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_games)
         mAuth = FirebaseAuth.getInstance()
@@ -29,38 +33,48 @@ class GamesActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
         val inst = findViewById<CardView>(R.id.chesstab)
         inst.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
         val inst2 = findViewById<CardView>(R.id.carromstab)
         inst2.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
         val inst3 = findViewById<CardView>(R.id.rubikstab)
         inst3.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
         val inst4 = findViewById<CardView>(R.id.darttab)
         inst4.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
         val inst5 = findViewById<CardView>(R.id.cardstab)
         inst5.setOnClickListener {
+            val bundle = transformationLayout.withActivity(this, "myTransitionName")
             val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
-            startActivity(intnt)
+            intent.putExtra("TransformationParams", transformationLayout.getParcelableParams())
+            startActivity(intnt,bundle)
         }
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

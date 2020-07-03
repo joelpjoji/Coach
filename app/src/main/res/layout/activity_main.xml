@@ -8,6 +8,13 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id="@+id/transformationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:transformation_duration="550">
+
+    </com.skydoves.transformationlayout.TransformationLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
