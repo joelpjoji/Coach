@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.util.Log
 import android.view.View

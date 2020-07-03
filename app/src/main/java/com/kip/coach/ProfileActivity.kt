@@ -1,6 +1,5 @@
-package com.Coach.coach
+package com.kip.coach
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide

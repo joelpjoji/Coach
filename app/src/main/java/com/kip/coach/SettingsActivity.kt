@@ -1,8 +1,6 @@
-package com.Coach.coach
+package com.kip.coach
 
-import android.content.Context
 import android.os.Bundle
-import android.telephony.TelephonyManager
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*

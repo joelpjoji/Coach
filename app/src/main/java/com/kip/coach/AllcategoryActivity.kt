@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +11,12 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
-class FeedbackActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class AllcategoryActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_feedback)
+        setContentView(R.layout.activity_allcategory)
+
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
@@ -25,6 +26,7 @@ class FeedbackActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
     }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         val i = Intent()

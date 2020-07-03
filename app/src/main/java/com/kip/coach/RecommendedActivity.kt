@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

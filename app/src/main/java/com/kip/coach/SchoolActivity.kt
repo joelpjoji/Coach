@@ -1,9 +1,12 @@
-package com.Coach.coach
+package com.kip.coach
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Vibrator
 import android.view.MenuItem
+import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.bumptech.glide.Glide
@@ -11,12 +14,11 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
-class CertificatesActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class SchoolActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_certificates)
-
+        setContentView(R.layout.activity_school)
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
@@ -25,8 +27,21 @@ class CertificatesActivity : AppCompatActivity(), NavigationView.OnNavigationIte
         email_txt.text = currentUser?.email
 
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
+        val inst1 = findViewById<CardView>(R.id.school1)
+        inst1.setOnClickListener {
+            val intnt = Intent(this, SchoolDetailsActivity::class.java)
+            val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibratorService.vibrate(35)
+            startActivity(intnt)
+        }
+        val inst2 = findViewById<CardView>(R.id.school2)
+        inst2.setOnClickListener {
+            val intnt = Intent(this, SchoolDetailsActivity::class.java)
+            val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibratorService.vibrate(35)
+            startActivity(intnt)
+        }
     }
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         val i = Intent()

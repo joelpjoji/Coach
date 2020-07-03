@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.content.Context
 import android.content.Intent
@@ -11,9 +11,7 @@ import android.view.animation.Animation
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.Coach.coach.CreateAnim.createAnimation
-import com.Coach.coach.OnAnimationListener
-import com.Coach.coach.StarterAnimation
+import com.kip.coach.CreateAnim.createAnimation
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_starter.*
 

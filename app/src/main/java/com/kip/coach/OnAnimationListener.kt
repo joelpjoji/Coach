@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 interface OnAnimationListener {
     fun onRepeat()

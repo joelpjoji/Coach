@@ -1,4 +1,4 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.content.Context
 import android.content.Intent
@@ -14,11 +14,11 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
-class SchoolActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class CraftsActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener{
     private lateinit var mAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_school)
+        setContentView(R.layout.activity_crafts)
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
@@ -27,21 +27,29 @@ class SchoolActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         email_txt.text = currentUser?.email
 
         Glide.with(this).load(currentUser?.photoUrl).into(profile_image)
-        val inst1 = findViewById<CardView>(R.id.school1)
-        inst1.setOnClickListener {
-            val intnt = Intent(this, SchoolDetailsActivity::class.java)
+        val inst = findViewById<CardView>(R.id.paintingtab)
+        inst.setOnClickListener {
+            val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
-        val inst2 = findViewById<CardView>(R.id.school2)
+        val inst2 = findViewById<CardView>(R.id.origamitab)
         inst2.setOnClickListener {
-            val intnt = Intent(this, SchoolDetailsActivity::class.java)
+            val intnt = Intent(this, SchoolActivity::class.java)
+            val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibratorService.vibrate(35)
+            startActivity(intnt)
+        }
+        val inst3 = findViewById<CardView>(R.id.calligraphytab)
+        inst3.setOnClickListener {
+            val intnt = Intent(this, SchoolActivity::class.java)
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(35)
             startActivity(intnt)
         }
     }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         val i = Intent()

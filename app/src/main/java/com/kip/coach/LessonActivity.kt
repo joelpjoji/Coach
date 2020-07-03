@@ -1,15 +1,11 @@
-package com.Coach.coach
+package com.kip.coach
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import cn.jzvd.Jzvd
 import cn.jzvd.JzvdStd
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.target.Target
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_lesson.*
