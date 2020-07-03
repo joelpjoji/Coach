@@ -35,7 +35,6 @@
 
 
             <TextView
-                android:id="@+id/acc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="ACCOUNT"
@@ -81,7 +80,6 @@
                     android:textColor="@color/Black"/>
 
                 <TextView
-                    android:id="@+id/phone_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/phoneNumber"
@@ -174,7 +172,6 @@
                 android:background="#e0e0e0"/>
 
             <TextView
-                android:id="@+id/pri_sec"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="PRIVACY &amp; SECURITY"
@@ -298,7 +295,6 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/logouts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"

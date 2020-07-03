@@ -17,7 +17,7 @@ class StarterAnimation(
             animateView(resList[0], view)
         } else {
             Log.d("SplashAnimation",
-                "Oops!, looks like you forgot to put animation list as parameter!")
+                "")
         }
     }
 

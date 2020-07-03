@@ -50,7 +50,6 @@ class StarterActivity : AppCompatActivity() {
         // create list of animations
         val animList: ArrayList<Animation> = ArrayList()
 
-        animList.add(createAnimation(applicationContext, R.anim.no_animaiton))
         animList.add(createAnimation(applicationContext, R.anim.rotate))
         animList.add(createAnimation(applicationContext, R.anim.zoom_out_fast))
         animList.add(createAnimation(applicationContext, R.anim.fade_in))

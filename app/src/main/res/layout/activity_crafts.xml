@@ -34,7 +34,6 @@
 
 
         <GridLayout
-            android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="1200dp"
             android:layout_marginLeft="20dp"

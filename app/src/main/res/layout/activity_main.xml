@@ -107,7 +107,6 @@
         </RelativeLayout>
 
         <GridLayout
-            android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="571dp"
             android:layout_weight="8"
