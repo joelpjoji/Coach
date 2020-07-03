@@ -1,10 +1,57 @@
 <resources>
     <string name="app_name">Coach</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_image">my_image</string>
+    <string name="username">Username</string>
+    <string name="Email">Email Address</string>
     <string name="example">Example</string>
     <string name="id">ID</string>
     <string name="name">Name</string>
     <string name="email_address">Email address</string>
     <string name="sign_out">Sign out</string>
+    <string name="termsandconditions">Terms and Conditions<a href="https://hastebin.com/utixekogaj.sql"></a></string>
+    <string name="job_success">Job Success</string>
+    <string name="ui_ux_designer">UI/UX Designer</string>
+    <string name="my_desc">Doing at the sweet spot between aesthetics and elegance to give life to your brand.My opinion belong to nobody but myself.</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Contact</string>
+    <string name="skills">Skills</string>
+    <string name="ratings">Star Ratings</string>
+
+
+    <string name="inbox">Inbox</string>
+    <string name="starred">starred</string>
+    <string name="send_mail">send_mail</string>
+    <string name="draft">draft</string>
+    <string name="subheader">Subheader</string>
+    <string name="all_mail">all_mail</string>
+    <string name="trash">trash</string>
+    <string name="spam">spam</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation_drawer</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="rate">How would you rate your lesson</string>
+    <string name="feed">Give feedback to your tutors</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
