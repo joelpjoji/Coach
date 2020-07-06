@@ -140,7 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/instruments" />
 
 
                 </LinearLayout>
@@ -183,7 +183,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/dancing" />
 
 
                 </LinearLayout>
@@ -224,7 +224,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/chess1" />
 
 
                 </LinearLayout>
@@ -265,7 +265,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/singing" />
 
 
                 </LinearLayout>
@@ -306,7 +306,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/crafts" />
 
 
                 </LinearLayout>
@@ -348,7 +348,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/cross" />
+                        android:src="@drawable/sports" />
 
 
                 </LinearLayout>
